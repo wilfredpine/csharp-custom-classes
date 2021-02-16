@@ -186,4 +186,20 @@ private void txtUsername_KeyPress(object sender, KeyPressEventArgs e)
 ## Config Class
 
 * Database Information (connection string)
-* Upload Directories
+
+```c#
+/*
+* Database Information
+*/
+public static string dbname = "dbinformation";
+public static string dbuser = "root";
+public static string dbpassword = "";
+```
+
+* Upload Directories & Validations
+
+```c#
+public static string upload_path = @"c:\C-Sharf Classes\";
+public static string allowedImage = "Image Files|*.jpg;*.jpeg;*.png";
+public static string allowedFile = "Excel Files(.xls ,.xlsx)| *.xls ;*.xlsx|PDF Files(.pdf)|*.pdf|Text Files(*.txt)|*.txt|Word Files(.docx ,.doc)|*.docx;*.doc";
+```
