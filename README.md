@@ -1,10 +1,13 @@
 # CSharf Custom Classes
 
 Custom classes for Windows Form Application in C# Developed by Wilfred V. Pine
+@2020
 
-## Classes
+[MIT License](https://github.com/redmalmon/CSharf-Custom-Classes/blob/main/LICENSE)
 
-1. Database class - for database configuration
+## [Classes](https://github.com/redmalmon/CSharf-Custom-Classes/tree/main/C-Sharf%20Classes/Classes)
+
+1. [Database](https://github.com/redmalmon/CSharf-Custom-Classes/blob/main/C-Sharf%20Classes/Classes/Database.cs) class - for database configuration
 
 * Instantiate
 
@@ -52,15 +55,15 @@ db.table("select userid,username,sex from users", dgvUsers, customheader);
 ```
 
 
-2. Date_time class - for date & time conversion
+2. [Date_time](https://github.com/redmalmon/CSharf-Custom-Classes/blob/main/C-Sharf%20Classes/Classes/Date_time.cs) class - for date & time conversion
 
 * 
 
-3. Public_variables - stored global variables
+3. [Public_variables](https://github.com/redmalmon/CSharf-Custom-Classes/blob/main/C-Sharf%20Classes/Classes/Public_variables.cs) - stored global variables
 
 * 
 
-4. UI_events - form controls & events
+4. [UI_events](https://github.com/redmalmon/CSharf-Custom-Classes/blob/main/C-Sharf%20Classes/Classes/UI_events.cs) - form controls & events
 
 * Instantiate
 
@@ -152,11 +155,11 @@ ui.chart(chartUser, "Sex", X, Y, "Column");
 ```
 
 
-5. Upload - files & directories
+5. [Upload](https://github.com/redmalmon/CSharf-Custom-Classes/blob/main/C-Sharf%20Classes/Classes/Upload.cs) - files & directories
 
 * 
 
-6. Validations - keyboard events, mouse events, etc.
+6. [Validations](https://github.com/redmalmon/CSharf-Custom-Classes/blob/main/C-Sharf%20Classes/Classes/Validations.cs) - keyboard events, mouse events, etc.
 
 * Instantiate
 
@@ -183,7 +186,7 @@ private void txtUsername_KeyPress(object sender, KeyPressEventArgs e)
 ```
 
 
-## Config Class
+## [Config](https://github.com/redmalmon/CSharf-Custom-Classes/blob/main/C-Sharf%20Classes/Config.cs) Class
 
 * Database Information (connection string)
 
