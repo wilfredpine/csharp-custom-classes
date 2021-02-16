@@ -53,7 +53,7 @@ namespace C_Sharf_Classes.View
                     db.save("users", column, value);
 
                     //or you can use // 1 line
-                    //db.cud("INSERT INTO users (username,password,"sex") VALUES ('" + txtUsername.Text + "','" + txtPassword.Text + "','" + cmbSex.Text + "')","Successfully Saved");
+                    //db.cud("INSERT INTO users (username,password,sex) VALUES ('" + txtUsername.Text + "','" + txtPassword.Text + "','" + cmbSex.Text + "')","Successfully Saved");
 
                     clearInputs();
                 }
