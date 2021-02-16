@@ -9,7 +9,7 @@ namespace C_Sharf_Classes
     {
 
         Database db = new Database();
-        Validatios validate = new Validatios();
+        Validations validate = new Validations();
         UI_events ui = new UI_events();
         Public_variables variables = new Public_variables();
 

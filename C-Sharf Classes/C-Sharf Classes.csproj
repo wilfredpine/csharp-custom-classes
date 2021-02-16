@@ -52,7 +52,7 @@
     <Compile Include="Classes\Public_variables.cs" />
     <Compile Include="Classes\UI_events.cs" />
     <Compile Include="Classes\Upload.cs" />
-    <Compile Include="Classes\Validatios.cs" />
+    <Compile Include="Classes\Validations.cs" />
     <Compile Include="Config.cs" />
     <Compile Include="Classes\Database.cs" />
     <Compile Include="frmLogin.cs">

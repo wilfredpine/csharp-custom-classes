@@ -15,7 +15,7 @@ namespace C_Sharf_Classes.View
     {
 
         Database db = new Database();
-        Validatios validate = new Validatios();
+        Validations validate = new Validations();
 
         public frmInputs()
         {
