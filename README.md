@@ -59,11 +59,11 @@ db.table("select userid,username,sex from users", dgvUsers, customheader);
 
 * 
 
-### 3. [Public_variables](https://github.com/redmalmon/CSharf-Custom-Classes/blob/main/C-Sharf%20Classes/Classes/Public_variables.cs) - stored global variables
+### 3. [Public_variables](https://github.com/redmalmon/CSharf-Custom-Classes/blob/main/C-Sharf%20Classes/Classes/Public_variables.cs) class - stored global variables
 
 * 
 
-### 4. [UI_events](https://github.com/redmalmon/CSharf-Custom-Classes/blob/main/C-Sharf%20Classes/Classes/UI_events.cs) - form controls & events
+### 4. [UI_events](https://github.com/redmalmon/CSharf-Custom-Classes/blob/main/C-Sharf%20Classes/Classes/UI_events.cs) class - form controls & events
 
 * Instantiate
 
@@ -155,11 +155,11 @@ ui.chart(chartUser, "Sex", X, Y, "Column");
 ```
 
 
-### 5. [Upload](https://github.com/redmalmon/CSharf-Custom-Classes/blob/main/C-Sharf%20Classes/Classes/Upload.cs) - files & directories
+### 5. [Upload](https://github.com/redmalmon/CSharf-Custom-Classes/blob/main/C-Sharf%20Classes/Classes/Upload.cs) class - files & directories
 
 * 
 
-### 6. [Validations](https://github.com/redmalmon/CSharf-Custom-Classes/blob/main/C-Sharf%20Classes/Classes/Validations.cs) - keyboard events, mouse events, etc.
+### 6. [Validations](https://github.com/redmalmon/CSharf-Custom-Classes/blob/main/C-Sharf%20Classes/Classes/Validations.cs) class - keyboard events, mouse events, etc.
 
 * Instantiate
 
