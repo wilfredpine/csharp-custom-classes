@@ -20,7 +20,7 @@ Database db = new Database();
 
 #### Using Database' Methods
 
-- Sql Statements
+Sql Statements
 
 * `select(string qry)` or select() method is use for `select` statements and this method return `MySqlDataReader` that reads a forward-only stream of rows from a MySQL database.
 
@@ -32,7 +32,9 @@ while (reader.Read())
 }
 ```
 
-* `save(string table, string[] column, string[] bind)` or save() method is use for `insert into` statements and does not return a value. This methods display a MessageBox for showing the result of your sql statement. The `table` parameter is use to pass your table_name from your database, while `column` parameter is use to pass your collection of column_name from your database table, and the `bind` parameter is for the collection of values of the columns.
+* `save(string table, string[] column, string[] bind)` or save() method is use for `insert into` statements and does not return a value. This methods display a MessageBox for showing the result of your sql statement. 
+
+The `table` parameter is use to pass your table_name from your database, while `column` parameter is use to pass your collection of column_name from your database table, and the `bind` parameter is for the collection of values of the columns.
 
 ```c#
 string[] value = { txtUsername.Text, txtPassword.Text, cmbSex.Text };
@@ -40,23 +42,32 @@ string[] column = { "username", "password", "sex" };
 db.save("users", column, value);
 ```
 
-* `cud(string qry, string msg = "")`
+* `cud(string qry, string msg = "")` or cud() method is use for your `insert into` , `update` , and `delete` statements. This method also does not return a value. This methods display a MessageBox for showing the result of your sql statement, or passing your custom notification message (optional) using `msg` parameter.
 
 ```c#
-db.cud("Sql Query Here","Successfully Saved/Updated/Deleted");
-
-db.cud("INSERT INTO users (username,password,sex) VALUES ('" + txtUsername.Text + "','" + txtPassword.Text + "','" + cmbSex.Text + "')","Successfully Saved");
-
-
+db.cud("Sql Query Here","Custom Notification Message");
+//or
+db.cud("Sql Query Here");
 ```
 
-* Display to DataGridView (datasource)
+```c#
+db.cud("INSERT INTO users (username,password,sex) VALUES ('" + txtUsername.Text + "','" + txtPassword.Text + "','" + cmbSex.Text + "')","Successfully Saved");
+```
+
+* `table(string qry, DataGridView dgv, string[] header = null)` or table() method is use for displaying data to DataGridView Control using the DataSource properties.
+
+The `qry` parameter use for your sql satements `select`. The `dgv` parameter is use to pass the name of your DataGridView Control, while the `header` parameter (optional) is use to display the custom header name for your DataGridView display.
 
 ```c#
-//optional
+//using custom header
 string[] customheader = { "User ID", "Username", "Gender" };
 //the table methods
 db.table("select userid,username,sex from users", dgvUsers, customheader);
+```
+
+```c#
+//the table methods without custom header
+db.table("select userid,username,sex from users", dgvUsers);
 ```
 
 
@@ -76,66 +87,83 @@ db.table("select userid,username,sex from users", dgvUsers, customheader);
 UI_events ui = new UI_events();
 ```
 
-* MDI show form child
+* `FormShow(Form frm, string dstyle = "Fill")` or FormShow() methods is use for displaying form child to your MdiParent Form.
 
+Instantiate an object `dash` of a form `frmDashboard`.
 ```c#
 frmDashboard dash = new frmDashboard();
-ui.FormShow(dash, "Fill");
+```
+Passing object `dash` to the first parameter, and "Top" (`DockStyle` property value) to second parameter (Optional). Top property value is use for Dock properties of a form child. The default Dock property value is `DockStyle.Fill` or `Fill`.
+```c#
+ui.FormShow(dash, "Top");
 ```
 
-* Show new Form & hide this
+```c#
+// Fill
+frmDashboard dash = new frmDashboard();
+ui.FormShow(dash);
+```
+
+* `Show(Form frmNew, Form frmOld)` or Show() method is simply use for displaying new Form and hiding active Form. 
 
 ```c#
 frmMain frmain = new frmMain();
 ui.Show(frmain, this);
+//behind the methods
+//frmain.Show();
+//this.Hide();
 ```
 
-* Form Show Dialog
+* `Dialog(Form frm)` or Dialog() methods use for displaying Form as Dialog.
 
 ```c#
 frmMain frmain = new frmMain();
 ui.Dialog(frmain);
 ```
 
-* Charting
+#### Chart
+
+* `chart(Chart chart, string SeriesName, string[] x, int[] y, string chartType = "Column")` or chart() method
+
+The `chart` parameter is the name of your Chart Control. You can add a Serries by passing to `SeriesName` parameter and AddXY using `x` and `y` parameter. `x` is the legend, name or label of every data you want to display while `y` is the number value or count.
+
+Example: 
 
 ```c#
 void loadChartSample()
 {
     /*
-    * SERIES MALE
+    * SERIES 'MALE'
     */
-
     // Array Legend
-    string[] X = { "BSIT", "BSED" };
-    // Add item to array Legend
-    X = X.Concat(new string[] { "AB" }).ToArray(); 
-    // new X is "BSIT", "BSED", "AB"
-
-
+    string[] X = { "BSIT", "BSED", "AB" };
     // Array Value
-    int[] Y = { 12, 14 };
-    // Add item to array
-    Y = Y.Concat(new int[] { 2 }).ToArray(); 
-    // Y = 12, 14, 2
-
-
+    int[] Y = { 12, 14, 9 };
     // Pass to Chart Methods = Male Series
-    ui.chart(chartUser, "Male", X, Y, "Column");
-
+    ui.chart(chartUser, "Male", X, Y, "Pie");
     //_________________________________________________________________________________
-    
     /*
-    * NEW SERIES FEMALE
+    * NEW SERIES 'FEMALE'
     */
-
-    // new 
     string[] x2 = { "BSIT", "BSED", "AB" };
     int[] y2 = { 6, 0, 16 };
-
-    // Female
-    ui.chart(chartUser, "Female", x2, y2, "Column");
+    // Female Series
+    ui.chart(chartUser, "Female", x2, y2, "Pie");
 }
+```
+
+How to add an item to array?
+
+```c#
+string[] X = { "BSIT", "BSED" };
+// Add 1 item to array X
+X = X.Concat(new string[] { "AB" }).ToArray(); 
+// The new X is { "BSIT", "BSED", "AB" }
+
+int[] Y = { 12, 14 };
+// Add 1 item to array Y
+Y = Y.Concat(new int[] { 2 }).ToArray(); 
+// Y = 12, 14, 2
 ```
 
 * Chart data from database
@@ -144,6 +172,7 @@ void loadChartSample()
 /*
 * SERIES SEX
 */
+//initialized empty array
 string[] X = {};
 int[] Y = {};
 
@@ -153,10 +182,9 @@ while (reader.Read())
     X = X.Concat(new string[] { reader["sex"].ToString() }).ToArray();
     Y = Y.Concat(new int[] { Int32.Parse(reader["c"].ToString()) }).ToArray();
 }
-
 // Chart Methods
-// ChartSeries = "Sex"; ChartType = "Column";
-ui.chart(chartUser, "Sex", X, Y, "Column");
+// ChartSeries = "Sex"; ChartType = "Pie";
+ui.chart(chartUser, "Sex", X, Y, "Pie");
 ```
 
 
@@ -172,7 +200,7 @@ ui.chart(chartUser, "Sex", X, Y, "Column");
 Validations validate = new Validations();
 ```
 
-* Empty input controls
+* The `txtRequired(TextBox[] txt, string msg = "")` or txtTequired() method use to validate required input controls.
 
 ```c#
 TextBox[] txt = { txtUsername, txtPassword, txtCPassword };
@@ -193,7 +221,7 @@ private void txtUsername_KeyPress(object sender, KeyPressEventArgs e)
 
 ## [Config](https://github.com/redmalmon/CSharf-Custom-Classes/blob/main/C-Sharf%20Classes/Config.cs) Class
 
-* Database Information (connection string)
+* Database Information use as connection string.
 
 ```c#
 /*
@@ -204,7 +232,7 @@ public static string dbuser = "root";
 public static string dbpassword = "";
 ```
 
-* Upload Directories & Validations
+* Upload Directories & Validations.
 
 ```c#
 public static string upload_path = @"c:\C-Sharf Classes\";

@@ -83,7 +83,7 @@ namespace C_Sharf_Classes.Classes
                 }
                 else
                 {
-                    MessageBox.Show("Please fillup required fields!");
+                    MessageBox.Show("Please select required fields!");
                 }
                 return false;
             }

@@ -41,120 +41,129 @@ namespace C_Sharf_Classes.Classes
 {
     class UI_events
     {
-        public void Show(Form frm, Form form)
-        {
-            frm.Show();
-            form.Hide();
-        }
 
-        public void Dialog(Form frm)
-        {
-            frm.ShowDialog();
-        }
-
-        public void FormShow(Form frm, string dstyle = "Fill")
-        {
-            try
+        #region Form Events
+            
+            public void Show(Form frmNew, Form frmOld)
             {
-                foreach (Form child in frmMain.ActiveForm.MdiChildren)
+                frmNew.Show();
+                frmOld.Hide();
+            }
+
+            public void Dialog(Form frm)
+            {
+                frm.ShowDialog();
+            }
+
+            public void FormShow(Form frm, string dstyle = "Fill")
+            {
+                try
                 {
-                    child.Close();
+                    foreach (Form child in frmMain.ActiveForm.MdiChildren)
+                    {
+                        child.Close();
+                    }
+                } catch { }
+
+                frm.MdiParent = frmMain.formParent;
+                switch (dstyle)
+                {
+                    case "Fill":
+                        frm.Dock = DockStyle.Fill;
+                        break;
+                    case "Top":
+                        frm.Dock = DockStyle.Top;
+                        break;
+                    case "Right":
+                        frm.Dock = DockStyle.Right;
+                        break;
+                    case "Bottom":
+                        frm.Dock = DockStyle.Bottom;
+                        break;
+                    case "Left":
+                        frm.Dock = DockStyle.Left;
+                        break;
+                    default:
+                        frm.Dock = DockStyle.None;
+                        break;
                 }
-            } catch { }
-
-            frm.MdiParent = frmMain.formParent;
-            switch (dstyle)
-            {
-                case "Fill":
-                    frm.Dock = DockStyle.Fill;
-                    break;
-                case "Top":
-                    frm.Dock = DockStyle.Top;
-                    break;
-                case "Right":
-                    frm.Dock = DockStyle.Right;
-                    break;
-                case "Bottom":
-                    frm.Dock = DockStyle.Bottom;
-                    break;
-                case "Left":
-                    frm.Dock = DockStyle.Left;
-                    break;
-                default:
-                    frm.Dock = DockStyle.None;
-                    break;
-            }
-            frm.Show();
-        }
-
-        public void chart(Chart chart, string SeriesName, string[] x, int[] y, string chartType = "Column")
-        {
-            if (chart.Series[0].Name == "Series1")
-            {
-                //remove default series
-                chart.Series.Remove(chart.Series["Series1"]);
-            }
-            //add new series
-            chart.Series.Add(SeriesName);
-
-            //chart Type
-            switch (chartType)
-            {
-                case "Area":
-                    chart.Series[SeriesName].ChartType = SeriesChartType.Area;
-                    break;
-                case "Bar":
-                    chart.Series[SeriesName].ChartType = SeriesChartType.Bar;
-                    break;
-                case "BoxPlot":
-                    chart.Series[SeriesName].ChartType = SeriesChartType.BoxPlot;
-                    break;
-                case "Bubble":
-                    chart.Series[SeriesName].ChartType = SeriesChartType.Bubble;
-                    break;
-                case "Candlestick":
-                    chart.Series[SeriesName].ChartType = SeriesChartType.Candlestick;
-                    break;
-                case "Doughnut":
-                    chart.Series[SeriesName].ChartType = SeriesChartType.Doughnut;
-                    break;
-                case "ErrorBar":
-                    chart.Series[SeriesName].ChartType = SeriesChartType.ErrorBar;
-                    break;
-                case "FastLine":
-                    chart.Series[SeriesName].ChartType = SeriesChartType.FastLine;
-                    break;
-                case "FastPoint":
-                    chart.Series[SeriesName].ChartType = SeriesChartType.FastPoint;
-                    break;
-                case "Funnel":
-                    chart.Series[SeriesName].ChartType = SeriesChartType.Funnel;
-                    break;
-                case "Kagi":
-                    chart.Series[SeriesName].ChartType = SeriesChartType.Kagi;
-                    break;
-                case "Line":
-                    chart.Series[SeriesName].ChartType = SeriesChartType.Line;
-                    break;
-                case "Pie":
-                    chart.Series[SeriesName].ChartType = SeriesChartType.Pie;
-                    break;
-                case "Point":
-                    chart.Series[SeriesName].ChartType = SeriesChartType.Point;
-                    break;
-                default:
-                    chart.Series[SeriesName].ChartType = SeriesChartType.Column;
-                    break;
+                frm.Show();
             }
 
-            int count = 0;
-            //pass the legend & value
-            foreach (string addx in x)
+        #endregion
+
+        #region Data Visualization
+
+            public void chart(Chart chart, string SeriesName, string[] x, int[] y, string chartType = "Column")
             {
-                chart.Series[SeriesName].Points.AddXY(addx, y[count]);
-                count++;
+                if (chart.Series[0].Name == "Series1")
+                {
+                    //remove default series
+                    chart.Series.Remove(chart.Series["Series1"]);
+                }
+                //add new series
+                chart.Series.Add(SeriesName);
+
+                //chart Type
+                switch (chartType)
+                {
+                    case "Area":
+                        chart.Series[SeriesName].ChartType = SeriesChartType.Area;
+                        break;
+                    case "Bar":
+                        chart.Series[SeriesName].ChartType = SeriesChartType.Bar;
+                        break;
+                    case "BoxPlot":
+                        chart.Series[SeriesName].ChartType = SeriesChartType.BoxPlot;
+                        break;
+                    case "Bubble":
+                        chart.Series[SeriesName].ChartType = SeriesChartType.Bubble;
+                        break;
+                    case "Candlestick":
+                        chart.Series[SeriesName].ChartType = SeriesChartType.Candlestick;
+                        break;
+                    case "Doughnut":
+                        chart.Series[SeriesName].ChartType = SeriesChartType.Doughnut;
+                        break;
+                    case "ErrorBar":
+                        chart.Series[SeriesName].ChartType = SeriesChartType.ErrorBar;
+                        break;
+                    case "FastLine":
+                        chart.Series[SeriesName].ChartType = SeriesChartType.FastLine;
+                        break;
+                    case "FastPoint":
+                        chart.Series[SeriesName].ChartType = SeriesChartType.FastPoint;
+                        break;
+                    case "Funnel":
+                        chart.Series[SeriesName].ChartType = SeriesChartType.Funnel;
+                        break;
+                    case "Kagi":
+                        chart.Series[SeriesName].ChartType = SeriesChartType.Kagi;
+                        break;
+                    case "Line":
+                        chart.Series[SeriesName].ChartType = SeriesChartType.Line;
+                        break;
+                    case "Pie":
+                        chart.Series[SeriesName].ChartType = SeriesChartType.Pie;
+                        break;
+                    case "Point":
+                        chart.Series[SeriesName].ChartType = SeriesChartType.Point;
+                        break;
+                    default:
+                        chart.Series[SeriesName].ChartType = SeriesChartType.Column;
+                        break;
+                }
+
+                int count = 0;
+                //pass the legend & value
+                foreach (string addx in x)
+                {
+                    chart.Series[SeriesName].Points.AddXY(addx, y[count]);
+                    count++;
+                }
             }
-        }
+
+        #endregion
 
     }
 }
