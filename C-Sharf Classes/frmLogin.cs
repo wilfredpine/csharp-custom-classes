@@ -31,6 +31,7 @@ namespace C_Sharf_Classes
             if (reader.Read())
             {
                 
+                //add your id to a global variable userId
                 variables.userId = Int32.Parse(reader["userid"].ToString());
                 
                 frmMain frmain = new frmMain();

@@ -32,11 +32,13 @@ namespace C_Sharf_Classes.View
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            // validation
             TextBox[] txt = { txtUsername, txtPassword, txtCPassword };
             ComboBox[] cmb = { cmbSex };
             if (!validate.txtRequired(txt) || !validate.cmbRequired(cmb))
                 return;
             
+            // database
             if(db.exist("select username from users where username='" + txtUsername.Text + "'"))
             {
                 MessageBox.Show("Username Already Exist");
@@ -49,7 +51,6 @@ namespace C_Sharf_Classes.View
                     //3 lines save
                     string[] value = { txtUsername.Text, validate.encodePassword(txtPassword.Text), cmbSex.Text };
                     string[] column = { "username", "password", "sex" };
-
                     db.save("users", column, value);
 
                     //or you can use // 1 line
