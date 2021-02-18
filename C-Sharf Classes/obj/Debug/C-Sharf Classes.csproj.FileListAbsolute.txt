@@ -16,3 +16,21 @@ C:\wamp64\www\GIT\CSharf-Custom-Classes-main\CSharf-Custom-Classes\C-Sharf Class
 C:\wamp64\www\GIT\CSharf-Custom-Classes-main\CSharf-Custom-Classes\C-Sharf Classes\obj\Debug\C-Sharf Classes.csproj.CopyComplete
 C:\wamp64\www\GIT\CSharf-Custom-Classes-main\CSharf-Custom-Classes\C-Sharf Classes\obj\Debug\C-Sharf Classes.exe
 C:\wamp64\www\GIT\CSharf-Custom-Classes-main\CSharf-Custom-Classes\C-Sharf Classes\obj\Debug\C-Sharf Classes.pdb
+C:\wamp64\www\GIT\CSharf-Custom-Classes-main\C-Sharf Classes\bin\Debug\C-Sharf Classes.exe.config
+C:\wamp64\www\GIT\CSharf-Custom-Classes-main\C-Sharf Classes\bin\Debug\C-Sharf Classes.exe
+C:\wamp64\www\GIT\CSharf-Custom-Classes-main\C-Sharf Classes\bin\Debug\C-Sharf Classes.pdb
+C:\wamp64\www\GIT\CSharf-Custom-Classes-main\C-Sharf Classes\bin\Debug\MySql.Data.dll
+C:\wamp64\www\GIT\CSharf-Custom-Classes-main\C-Sharf Classes\bin\Debug\Google.Protobuf.dll
+C:\wamp64\www\GIT\CSharf-Custom-Classes-main\C-Sharf Classes\bin\Debug\MySql.Data.xml
+C:\wamp64\www\GIT\CSharf-Custom-Classes-main\C-Sharf Classes\obj\Debug\C-Sharf Classes.csprojAssemblyReference.cache
+C:\wamp64\www\GIT\CSharf-Custom-Classes-main\C-Sharf Classes\obj\Debug\C_Sharf_Classes.frmLogin.resources
+C:\wamp64\www\GIT\CSharf-Custom-Classes-main\C-Sharf Classes\obj\Debug\C_Sharf_Classes.Properties.Resources.resources
+C:\wamp64\www\GIT\CSharf-Custom-Classes-main\C-Sharf Classes\obj\Debug\C_Sharf_Classes.View.frmDashboard.resources
+C:\wamp64\www\GIT\CSharf-Custom-Classes-main\C-Sharf Classes\obj\Debug\C_Sharf_Classes.View.frmDataGridView.resources
+C:\wamp64\www\GIT\CSharf-Custom-Classes-main\C-Sharf Classes\obj\Debug\C_Sharf_Classes.View.frmInputs.resources
+C:\wamp64\www\GIT\CSharf-Custom-Classes-main\C-Sharf Classes\obj\Debug\C_Sharf_Classes.View.frmMain.resources
+C:\wamp64\www\GIT\CSharf-Custom-Classes-main\C-Sharf Classes\obj\Debug\C-Sharf Classes.csproj.GenerateResource.cache
+C:\wamp64\www\GIT\CSharf-Custom-Classes-main\C-Sharf Classes\obj\Debug\C-Sharf Classes.csproj.CoreCompileInputs.cache
+C:\wamp64\www\GIT\CSharf-Custom-Classes-main\C-Sharf Classes\obj\Debug\C-Sharf Classes.csproj.CopyComplete
+C:\wamp64\www\GIT\CSharf-Custom-Classes-main\C-Sharf Classes\obj\Debug\C-Sharf Classes.exe
+C:\wamp64\www\GIT\CSharf-Custom-Classes-main\C-Sharf Classes\obj\Debug\C-Sharf Classes.pdb

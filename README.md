@@ -7,17 +7,22 @@ Custom classes for Windows Form Application in C# Developed by Wilfred V. Pine
 
 ## [Classes](https://github.com/redmalmon/CSharf-Custom-Classes/tree/main/C-Sharf%20Classes/Classes)
 
-### 1. [Database](https://github.com/redmalmon/CSharf-Custom-Classes/blob/main/C-Sharf%20Classes/Classes/Database.cs) class - for database configuration
+### 1. [Database](https://github.com/redmalmon/CSharf-Custom-Classes/blob/main/C-Sharf%20Classes/Classes/Database.cs) class - this is use for MySqlClient configurations, sql statements, & etc.
 
-* Instantiate
+* Instantiation - creating an object `db` from a class type `Database` and instantiate using the `new` keyword.
+
+see: [c-sharfcorner](https://www.c-sharpcorner.com/article/C-Sharp-object-instantiation-part-i-constructors/)
 
 ```c#
+// instantiate an object `db` from `Database` class
 Database db = new Database();
 ```
 
-SQL Statements
+#### Using Database' Methods
 
-* Select
+- Sql Statements
+
+* `select(string qry)` or select() method is use for `select` statements and this method return `MySqlDataReader` that reads a forward-only stream of rows from a MySQL database.
 
 ```c#
 var reader = db.select("select * from users");
@@ -27,22 +32,22 @@ while (reader.Read())
 }
 ```
 
-* Insert
+* `save(string table, string[] column, string[] bind)` or save() method is use for `insert into` statements and does not return a value. This methods display a MessageBox for showing the result of your sql statement. The `table` parameter is use to pass your table_name from your database, while `column` parameter is use to pass your collection of column_name from your database table, and the `bind` parameter is for the collection of values of the columns.
 
 ```c#
 string[] value = { txtUsername.Text, txtPassword.Text, cmbSex.Text };
 string[] column = { "username", "password", "sex" };
 db.save("users", column, value);
-
-//or
-
-db.cud("INSERT INTO users (username,password,sex) VALUES ('" + txtUsername.Text + "','" + txtPassword.Text + "','" + cmbSex.Text + "')","Successfully Saved");
 ```
 
-* Update & Delete
+* `cud(string qry, string msg = "")`
 
 ```c#
 db.cud("Sql Query Here","Successfully Saved/Updated/Deleted");
+
+db.cud("INSERT INTO users (username,password,sex) VALUES ('" + txtUsername.Text + "','" + txtPassword.Text + "','" + cmbSex.Text + "')","Successfully Saved");
+
+
 ```
 
 * Display to DataGridView (datasource)
