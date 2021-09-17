@@ -16,10 +16,19 @@ namespace C_Sharf_Classes
         [STAThread]
         static void Main()
         {
-            Database db = new Database();
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmLogin());
+            try
+            {
+                Database db = new Database();
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                Application.Run(new frmLogin());
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("Database Connection Error! The application will exit.");
+                System.Environment.Exit(1);
+            }
+           
         }
     }
 }

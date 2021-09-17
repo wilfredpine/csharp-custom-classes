@@ -47,6 +47,8 @@ namespace C_Sharf_Classes.Classes
 
         // connection string
         private static string constring = "server=localhost;uid=" + dbuser + ";pwd='" + dbpassword + "';database=" + dbname;
+
+        // MySql Classes
         public MySqlConnection con = new MySqlConnection(constring);
         MySqlCommand cmd;
         MySqlDataReader reader;
@@ -57,15 +59,9 @@ namespace C_Sharf_Classes.Classes
         public Database()
         {
             con = new MySqlConnection(constring);
-            try
+            if (con.State == ConnectionState.Closed)
             {
-                if(con.State == ConnectionState.Closed)
-                    con.Open();
-            }
-            catch (Exception ex)
-            {
-                Application.Exit();
-                MessageBox.Show(ex.Message);
+                con.Open();
             }
         }
 
@@ -93,7 +89,7 @@ namespace C_Sharf_Classes.Classes
             if (cmd.ExecuteNonQuery() > 0)
             {
                 if (msg == "")
-                    MessageBox.Show("Transaction Complete!");
+                    MessageBox.Show("Transaction Completed!");
                 else
                     MessageBox.Show(msg);
             }
