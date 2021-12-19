@@ -1,0 +1,52 @@
+C:\Users\wilfred pine\source\repos\Sample OOP Pro\bin\Debug\Sample OOP Pro.exe.config
+C:\Users\wilfred pine\source\repos\Sample OOP Pro\bin\Debug\Sample OOP Pro.exe
+C:\Users\wilfred pine\source\repos\Sample OOP Pro\bin\Debug\Sample OOP Pro.pdb
+C:\Users\wilfred pine\source\repos\Sample OOP Pro\obj\Debug\Sample OOP Pro.csproj.AssemblyReference.cache
+C:\Users\wilfred pine\source\repos\Sample OOP Pro\obj\Debug\Sample_OOP_Pro.FormMain.resources
+C:\Users\wilfred pine\source\repos\Sample OOP Pro\obj\Debug\Sample_OOP_Pro.Properties.Resources.resources
+C:\Users\wilfred pine\source\repos\Sample OOP Pro\obj\Debug\Sample OOP Pro.csproj.GenerateResource.cache
+C:\Users\wilfred pine\source\repos\Sample OOP Pro\obj\Debug\Sample OOP Pro.csproj.CoreCompileInputs.cache
+C:\Users\wilfred pine\source\repos\Sample OOP Pro\obj\Debug\Sample OOP Pro.exe
+C:\Users\wilfred pine\source\repos\Sample OOP Pro\obj\Debug\Sample OOP Pro.pdb
+C:\Users\wilfred pine\source\repos\Sample OOP Pro\obj\Debug\Sample_OOP_Pro.Forms.FormLogin.resources
+C:\Users\wilfred pine\source\repos\Sample OOP Pro\bin\Debug\MySql.Data.dll
+C:\Users\wilfred pine\source\repos\Sample OOP Pro\bin\Debug\Google.Protobuf.dll
+C:\Users\wilfred pine\source\repos\Sample OOP Pro\bin\Debug\ZstdNet.dll
+C:\Users\wilfred pine\source\repos\Sample OOP Pro\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\wilfred pine\source\repos\Sample OOP Pro\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\wilfred pine\source\repos\Sample OOP Pro\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\wilfred pine\source\repos\Sample OOP Pro\bin\Debug\System.Memory.dll
+C:\Users\wilfred pine\source\repos\Sample OOP Pro\bin\Debug\System.Buffers.dll
+C:\Users\wilfred pine\source\repos\Sample OOP Pro\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\wilfred pine\source\repos\Sample OOP Pro\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\wilfred pine\source\repos\Sample OOP Pro\bin\Debug\MySql.Data.xml
+C:\Users\wilfred pine\source\repos\Sample OOP Pro\obj\Debug\Sample_OOP_Pro.Forms.FormDashboard.resources
+C:\Users\wilfred pine\source\repos\Sample OOP Pro\obj\Debug\Sample_OOP_Pro.Forms.FormDataGridView.resources
+C:\Users\wilfred pine\source\repos\Sample OOP Pro\obj\Debug\Sample_OOP_Pro.Forms.FormInputs.resources
+C:\Users\wilfred pine\source\repos\Sample OOP Pro\obj\Debug\Sample_OOP_Pro.Forms.FormUpload.resources
+C:\Users\wilfred pine\source\repos\csharp-custom-classes\bin\Debug\Sample OOP Pro.exe.config
+C:\Users\wilfred pine\source\repos\csharp-custom-classes\bin\Debug\Sample OOP Pro.exe
+C:\Users\wilfred pine\source\repos\csharp-custom-classes\bin\Debug\Sample OOP Pro.pdb
+C:\Users\wilfred pine\source\repos\csharp-custom-classes\bin\Debug\MySql.Data.dll
+C:\Users\wilfred pine\source\repos\csharp-custom-classes\bin\Debug\Google.Protobuf.dll
+C:\Users\wilfred pine\source\repos\csharp-custom-classes\bin\Debug\ZstdNet.dll
+C:\Users\wilfred pine\source\repos\csharp-custom-classes\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\wilfred pine\source\repos\csharp-custom-classes\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\wilfred pine\source\repos\csharp-custom-classes\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\wilfred pine\source\repos\csharp-custom-classes\bin\Debug\System.Memory.dll
+C:\Users\wilfred pine\source\repos\csharp-custom-classes\bin\Debug\System.Buffers.dll
+C:\Users\wilfred pine\source\repos\csharp-custom-classes\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\wilfred pine\source\repos\csharp-custom-classes\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\wilfred pine\source\repos\csharp-custom-classes\bin\Debug\MySql.Data.xml
+C:\Users\wilfred pine\source\repos\csharp-custom-classes\obj\Debug\Sample OOP Pro.csproj.AssemblyReference.cache
+C:\Users\wilfred pine\source\repos\csharp-custom-classes\obj\Debug\Sample_OOP_Pro.FormMain.resources
+C:\Users\wilfred pine\source\repos\csharp-custom-classes\obj\Debug\Sample_OOP_Pro.Forms.FormDashboard.resources
+C:\Users\wilfred pine\source\repos\csharp-custom-classes\obj\Debug\Sample_OOP_Pro.Forms.FormDataGridView.resources
+C:\Users\wilfred pine\source\repos\csharp-custom-classes\obj\Debug\Sample_OOP_Pro.Forms.FormInputs.resources
+C:\Users\wilfred pine\source\repos\csharp-custom-classes\obj\Debug\Sample_OOP_Pro.Forms.FormLogin.resources
+C:\Users\wilfred pine\source\repos\csharp-custom-classes\obj\Debug\Sample_OOP_Pro.Forms.FormUpload.resources
+C:\Users\wilfred pine\source\repos\csharp-custom-classes\obj\Debug\Sample_OOP_Pro.Properties.Resources.resources
+C:\Users\wilfred pine\source\repos\csharp-custom-classes\obj\Debug\Sample OOP Pro.csproj.GenerateResource.cache
+C:\Users\wilfred pine\source\repos\csharp-custom-classes\obj\Debug\Sample OOP Pro.csproj.CoreCompileInputs.cache
+C:\Users\wilfred pine\source\repos\csharp-custom-classes\obj\Debug\Sample OOP Pro.exe
+C:\Users\wilfred pine\source\repos\csharp-custom-classes\obj\Debug\Sample OOP Pro.pdb
