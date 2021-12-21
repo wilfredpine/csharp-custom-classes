@@ -5,9 +5,9 @@ Custom classes for Windows Form Application in C# Developed by Wilfred V. Pine
 
 [MIT License](https://github.com/redmalmon/CSharf-Custom-Classes/blob/main/LICENSE)
 
-## [Classes](https://github.com/redmalmon/CSharf-Custom-Classes/tree/main/C-Sharf%20Classes/Classes)
+## [Classes](https://github.com/redmalmon/csharp-custom-classes/tree/main/Classes)
 
-### 1. [Database](https://github.com/redmalmon/CSharf-Custom-Classes/blob/main/C-Sharf%20Classes/Classes/Database.cs) class - this is use for MySqlClient configurations, sql statements, & etc.
+### 1. [Database](https://github.com/redmalmon/csharp-custom-classes/blob/main/Classes/Database.cs) class - this is use for MySqlClient configurations, sql statements, & etc. This will also included the loading of data to a form control including dataGridView and comboBox.
 
 * Instantiation - creating an object `db` from a class type `Database` and instantiate using the `new` keyword.
 
