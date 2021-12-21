@@ -47,7 +47,7 @@ Custom [Classes](https://github.com/redmalmon/csharp-custom-classes/tree/main/Cl
         }
     }
 ```
-3. Create an instance of your [Config](https://github.com/redmalmon/csharp-custom-classes/blob/main/Config.cs) class.
+3. To your Form (example; FormLogin), create an instance of your [Config](https://github.com/redmalmon/csharp-custom-classes/blob/main/Config.cs) class.
 ```c#
     public partial class FormLogin : Form
     {
