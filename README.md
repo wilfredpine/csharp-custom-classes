@@ -7,7 +7,7 @@ Custom [Classes](https://github.com/redmalmon/csharp-custom-classes/tree/main/Cl
 
 ## [Classes](https://github.com/redmalmon/csharp-custom-classes/tree/main/Classes)
 
-### How to use?
+## How to use?
 1. Copy the [Classes](https://github.com/redmalmon/csharp-custom-classes/tree/main/Classes) folder into your project folder.
 2. From your project folder root directory, create a class named " [Config](https://github.com/redmalmon/csharp-custom-classes/blob/main/Config.cs) " and create a public instance of all the classes from [Classes](https://github.com/redmalmon/csharp-custom-classes/tree/main/Classes) folder. See the code below:
 ```c#
@@ -69,7 +69,7 @@ Custom [Classes](https://github.com/redmalmon/csharp-custom-classes/tree/main/Cl
 ```
 
 
-### Using [Database](https://github.com/redmalmon/csharp-custom-classes/blob/main/Classes/Database.cs) class - this is use for MySqlClient configurations, sql statements, & etc. This will also included the loading of data to a form control including dataGridView and comboBox.
+## 1. Using [Database](https://github.com/redmalmon/csharp-custom-classes/blob/main/Classes/Database.cs) class - this is use for MySqlClient configurations, sql statements, & etc. This will also included the loading of data to a form control including dataGridView and comboBox.
 
 #### Using Database' Methods
 
@@ -149,7 +149,8 @@ int id = config.db.maxid('userid', 'users'); // it will return an int value
 
 
 
-### Using [Form_UI](https://github.com/redmalmon/csharp-custom-classes/blob/main/Classes/Form_UI.cs) class
+
+## 2. Using [Form_UI](https://github.com/redmalmon/csharp-custom-classes/blob/main/Classes/Form_UI.cs) class - 
 
 This class includes the traditional way of displaying form. Also includes the advanced UI manipulation using MDI or Multiple Document Interface.
 
@@ -188,7 +189,8 @@ config.ui.FormShow(dash); // or config.ui.FormShow(new frmDashboard());
 ```
 
 
-### Using [Visualizer](https://github.com/redmalmon/csharp-custom-classes/blob/main/Classes/Visualizer.cs) - use for visualization of data.
+
+## 3. Using [Visualizer](https://github.com/redmalmon/csharp-custom-classes/blob/main/Classes/Visualizer.cs) class - use for visualization of data.
 
 * `chart(Chart chart, string SeriesName, string[] x, int[] y, string chartType = "Column")` or chart() method
 
@@ -272,7 +274,8 @@ config.visualizer.chart(chartUser, "FEMALE", x2, y2, "Bar");
 ```
 
 
-### Using [Validations](https://github.com/redmalmon/csharp-custom-classes/blob/main/Classes/Validation.cs) class - use for validationg inputs (keyboard events, mouse events, etc.)
+
+## 4. Using [Validations](https://github.com/redmalmon/csharp-custom-classes/blob/main/Classes/Validation.cs) class - use for validationg inputs (keyboard events, mouse events, etc.)
 
 
 * The `txtRequired(TextBox[] txt, bool allow_message = false, string msg = "Please fillup required fields!")` or txtRequired() method use to validate required textbox controls. There is also validation for comboBox controls, the `cmbRequired(ComboBox[] cmb, bool allow_message = false, string msg = "Please select required fields!")` method. These functions return `false` if ther is an empty value in the fields.
@@ -294,10 +297,13 @@ private void txtUsername_KeyPress(object sender, KeyPressEventArgs e)
 ```
 
 
-### 2. [Date_time](https://github.com/redmalmon/csharp-custom-classes/blob/main/Classes/Str_Date_Time.cs) class - for date & time format conversion
+
+## 5. Using [Date_time](https://github.com/redmalmon/csharp-custom-classes/blob/main/Classes/Str_Date_Time.cs) class - for date & time format conversion
 
 * 
 
-### Using [Upload](https://github.com/redmalmon/csharp-custom-classes/blob/main/Classes/Upload.cs) class - working with files & directories
+
+## 6. Using [Upload](https://github.com/redmalmon/csharp-custom-classes/blob/main/Classes/Upload.cs) class - working with files & directories
 
 * 
+
