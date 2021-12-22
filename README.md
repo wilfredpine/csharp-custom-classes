@@ -8,8 +8,11 @@ Custom [Classes](https://github.com/redmalmon/csharp-custom-classes/tree/main/Cl
 ## [Classes](https://github.com/redmalmon/csharp-custom-classes/tree/main/Classes)
 
 ## How to use?
-1. Copy the [Classes](https://github.com/redmalmon/csharp-custom-classes/tree/main/Classes) folder into your project folder.
-2. From your project folder root directory, create a class named " [Config](https://github.com/redmalmon/csharp-custom-classes/blob/main/Config.cs) " and create a public instance of all the classes from [Classes](https://github.com/redmalmon/csharp-custom-classes/tree/main/Classes) folder. See the code below:
+1. Download the [Classes](https://github.com/redmalmon/csharp-custom-classes/tree/main/Classes) folder 
+2. Create a Windows Form Application project for .Net Framework Desktop Application.
+3. In your Solution Explorer, right click on your project and add a folder named "`Classes`"
+4. Then right click on your created "`Classes`" folder and add existing item. Browse the classes that you downloaded from step 1.
+5. From your project folder root directory (in oyur Solution Explorer), create a class named " [Config](https://github.com/redmalmon/csharp-custom-classes/blob/main/Config.cs) " and create a public instance of all the classes from [Classes](https://github.com/redmalmon/csharp-custom-classes/tree/main/Classes) folder. See the code below:
 ```c#
     using Classes; // include the "Classes" folder
     namespace MySampleProject
@@ -47,7 +50,7 @@ Custom [Classes](https://github.com/redmalmon/csharp-custom-classes/tree/main/Cl
         }
     }
 ```
-3. To your Form (example; FormLogin), create an instance of your [Config](https://github.com/redmalmon/csharp-custom-classes/blob/main/Config.cs) class.
+6. To your Form (example; FormLogin), create an instance of your [Config](https://github.com/redmalmon/csharp-custom-classes/blob/main/Config.cs) class.
 ```c#
     public partial class FormLogin : Form
     {
@@ -58,7 +61,7 @@ Custom [Classes](https://github.com/redmalmon/csharp-custom-classes/tree/main/Cl
             InitializeComponent();
         }
 ```
-4. You can now use [Database](https://github.com/redmalmon/csharp-custom-classes/blob/main/Classes/Database.cs) , [Validation](https://github.com/redmalmon/csharp-custom-classes/blob/main/Classes/Validation.cs) , [Visualizer](https://github.com/redmalmon/csharp-custom-classes/blob/main/Classes/Visualizer.cs) , [Upload](https://github.com/redmalmon/csharp-custom-classes/blob/main/Classes/Upload.cs) , [Date_Time](https://github.com/redmalmon/csharp-custom-classes/blob/main/Classes/Str_Date_Time.cs) , & [Form_UI](https://github.com/redmalmon/csharp-custom-classes/blob/main/Classes/Form_UI.cs) Class.
+7. You can now use [Database](https://github.com/redmalmon/csharp-custom-classes/blob/main/Classes/Database.cs) , [Validation](https://github.com/redmalmon/csharp-custom-classes/blob/main/Classes/Validation.cs) , [Visualizer](https://github.com/redmalmon/csharp-custom-classes/blob/main/Classes/Visualizer.cs) , [Upload](https://github.com/redmalmon/csharp-custom-classes/blob/main/Classes/Upload.cs) , [Date_Time](https://github.com/redmalmon/csharp-custom-classes/blob/main/Classes/Str_Date_Time.cs) , & [Form_UI](https://github.com/redmalmon/csharp-custom-classes/blob/main/Classes/Form_UI.cs) Class.
 ```c#
     config.db.....
     config.validate......
