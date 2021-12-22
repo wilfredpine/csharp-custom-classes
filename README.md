@@ -71,6 +71,14 @@ Custom [Classes](https://github.com/redmalmon/csharp-custom-classes/tree/main/Cl
 
 ## 1. Using [Database](https://github.com/redmalmon/csharp-custom-classes/blob/main/Classes/Database.cs) class - this is use for MySqlClient configurations, sql statements, & etc. This will also included the loading of data to a form control including dataGridView and comboBox.
 
+#### Requirements
+* MySql Server ([Wamp Server](https://wampserver.aviatechno.net/?lang=es&prerequis=afficher))
+* Install [MySql Connector .Net](https://dev.mysql.com/downloads/connector/net/)
+* After you installed MySQL Connector .Net, go to `C:\Program Files (x86)\MySQL\MySQL Connector Net 8.0.27\Assemblies\v4.5.2\` and use the `MySql.Data.dll` as a reference for your project. 
+    Note: `\v4.5.2\` is the .Net version of your project, you can use other version inside `C:\Program Files (x86)\MySQL\MySQL Connector Net 8.0.27\Assemblies\` folder.
+* & Now you can use MySQLClient, Good Luck!
+
+
 #### Using Database' Methods
 
 Sql Statements
