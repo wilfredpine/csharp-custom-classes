@@ -1,18 +1,18 @@
 # CSharf Custom Classes
 
-Custom [Classes](https://github.com/redmalmon/csharp-custom-classes/tree/main/Classes) for Windows Form Application using C# Developed by Wilfred V. Pine
+Custom [Classes](https://github.com/wilfredpine/csharp-custom-classes/tree/main/Classes) for Windows Form Application using C# Developed by Wilfred V. Pine
 @2020
 
-[MIT License](https://github.com/redmalmon/CSharf-Custom-Classes/blob/main/LICENSE)
+[MIT License](https://github.com/wilfredpine/CSharf-Custom-Classes/blob/main/LICENSE)
 
-## [Classes](https://github.com/redmalmon/csharp-custom-classes/tree/main/Classes)
+## [Classes](https://github.com/wilfredpine/csharp-custom-classes/tree/main/Classes)
 
 ## How to use?
-1. Download the [Classes](https://github.com/redmalmon/csharp-custom-classes/tree/main/Classes) folder 
+1. Download the [Classes](https://github.com/wilfredpine/csharp-custom-classes/tree/main/Classes) folder 
 2. Create a Windows Form Application project for .Net Framework Desktop Application.
 3. In your Solution Explorer, right click on your project and add a folder named "`Classes`"
 4. Then right click on your created "`Classes`" folder and add existing item. Browse the classes that you downloaded from step 1.
-5. From your project folder root directory (in oyur Solution Explorer), create a class named " [Config](https://github.com/redmalmon/csharp-custom-classes/blob/main/Config.cs) " and create a public instance of all the classes from [Classes](https://github.com/redmalmon/csharp-custom-classes/tree/main/Classes) folder. See the code below:
+5. From your project folder root directory (in oyur Solution Explorer), create a class named " [Config](https://github.com/wilfredpine/csharp-custom-classes/blob/main/Config.cs) " and create a public instance of all the classes from [Classes](https://github.com/wilfredpine/csharp-custom-classes/tree/main/Classes) folder. See the code below:
 ```c#
     using Classes; // include the "Classes" folder
     namespace MySampleProject
@@ -50,7 +50,7 @@ Custom [Classes](https://github.com/redmalmon/csharp-custom-classes/tree/main/Cl
         }
     }
 ```
-6. To your Form (example; FormLogin), create an instance of your [Config](https://github.com/redmalmon/csharp-custom-classes/blob/main/Config.cs) class.
+6. To your Form (example; FormLogin), create an instance of your [Config](https://github.com/wilfredpine/csharp-custom-classes/blob/main/Config.cs) class.
 ```c#
     public partial class FormLogin : Form
     {
@@ -61,7 +61,7 @@ Custom [Classes](https://github.com/redmalmon/csharp-custom-classes/tree/main/Cl
             InitializeComponent();
         }
 ```
-7. You can now use [Database](https://github.com/redmalmon/csharp-custom-classes/blob/main/Classes/Database.cs) , [Validation](https://github.com/redmalmon/csharp-custom-classes/blob/main/Classes/Validation.cs) , [Visualizer](https://github.com/redmalmon/csharp-custom-classes/blob/main/Classes/Visualizer.cs) , [Upload](https://github.com/redmalmon/csharp-custom-classes/blob/main/Classes/Upload.cs) , [Date_Time](https://github.com/redmalmon/csharp-custom-classes/blob/main/Classes/Str_Date_Time.cs) , & [Form_UI](https://github.com/redmalmon/csharp-custom-classes/blob/main/Classes/Form_UI.cs) Class.
+7. You can now use [Database](https://github.com/wilfredpine/csharp-custom-classes/blob/main/Classes/Database.cs) , [Validation](https://github.com/wilfredpine/csharp-custom-classes/blob/main/Classes/Validation.cs) , [Visualizer](https://github.com/wilfredpine/csharp-custom-classes/blob/main/Classes/Visualizer.cs) , [Upload](https://github.com/wilfredpine/csharp-custom-classes/blob/main/Classes/Upload.cs) , [Date_Time](https://github.com/wilfredpine/csharp-custom-classes/blob/main/Classes/Str_Date_Time.cs) , & [Form_UI](https://github.com/wilfredpine/csharp-custom-classes/blob/main/Classes/Form_UI.cs) Class.
 ```c#
     config.db.....
     config.validate......
@@ -72,7 +72,7 @@ Custom [Classes](https://github.com/redmalmon/csharp-custom-classes/tree/main/Cl
 ```
 
 
-## 1. Using [Database](https://github.com/redmalmon/csharp-custom-classes/blob/main/Classes/Database.cs) class - this is use for MySqlClient configurations, sql statements, & etc. This will also included the loading of data to a form control including dataGridView and comboBox.
+## 1. Using [Database](https://github.com/wilfredpine/csharp-custom-classes/blob/main/Classes/Database.cs) class - this is use for MySqlClient configurations, sql statements, & etc. This will also included the loading of data to a form control including dataGridView and comboBox.
 
 #### Requirements
 * MySql Server ([Wamp Server](https://wampserver.aviatechno.net/?lang=es&prerequis=afficher))
@@ -161,7 +161,7 @@ int id = config.db.maxid('userid', 'users'); // it will return an int value
 
 
 
-## 2. Using [Form_UI](https://github.com/redmalmon/csharp-custom-classes/blob/main/Classes/Form_UI.cs) class - 
+## 2. Using [Form_UI](https://github.com/wilfredpine/csharp-custom-classes/blob/main/Classes/Form_UI.cs) class - 
 
 This class includes the traditional way of displaying form. Also includes the advanced UI manipulation using MDI or Multiple Document Interface.
 
@@ -201,7 +201,7 @@ config.ui.FormShow(dash); // or config.ui.FormShow(new frmDashboard());
 
 
 
-## 3. Using [Visualizer](https://github.com/redmalmon/csharp-custom-classes/blob/main/Classes/Visualizer.cs) class - use for visualization of data.
+## 3. Using [Visualizer](https://github.com/wilfredpine/csharp-custom-classes/blob/main/Classes/Visualizer.cs) class - use for visualization of data.
 
 * `chart(Chart chart, string SeriesName, string[] x, int[] y, string chartType = "Column")` or chart() method
 
@@ -286,7 +286,7 @@ config.visualizer.chart(chartUser, "FEMALE", x2, y2, "Bar");
 
 
 
-## 4. Using [Validations](https://github.com/redmalmon/csharp-custom-classes/blob/main/Classes/Validation.cs) class - use for validationg inputs (keyboard events, mouse events, etc.)
+## 4. Using [Validations](https://github.com/wilfredpine/csharp-custom-classes/blob/main/Classes/Validation.cs) class - use for validationg inputs (keyboard events, mouse events, etc.)
 
 
 * The `txtRequired(TextBox[] txt, bool allow_message = false, string msg = "Please fillup required fields!")` or txtRequired() method use to validate required textbox controls. There is also validation for comboBox controls, the `cmbRequired(ComboBox[] cmb, bool allow_message = false, string msg = "Please select required fields!")` method. These functions return `false` if ther is an empty value in the fields.
@@ -309,12 +309,12 @@ private void txtUsername_KeyPress(object sender, KeyPressEventArgs e)
 
 
 
-## 5. Using [Date_time](https://github.com/redmalmon/csharp-custom-classes/blob/main/Classes/Str_Date_Time.cs) class - for date & time format conversion
+## 5. Using [Date_time](https://github.com/wilfredpine/csharp-custom-classes/blob/main/Classes/Str_Date_Time.cs) class - for date & time format conversion
 
 * 
 
 
-## 6. Using [Upload](https://github.com/redmalmon/csharp-custom-classes/blob/main/Classes/Upload.cs) class - working with files & directories
+## 6. Using [Upload](https://github.com/wilfredpine/csharp-custom-classes/blob/main/Classes/Upload.cs) class - working with files & directories
 
 * 
 
