@@ -81,6 +81,10 @@ Custom [Classes](https://github.com/wilfredpine/csharp-custom-classes/tree/main/
     Note: `\v4.5.2\` is the .Net version of your project, you can use other version inside `C:\Program Files (x86)\MySQL\MySQL Connector Net 8.0.27\Assemblies\` folder.
 * & Now you can use MySQLClient, Good Luck!
 
+#####   tips: how to add reference for your project?
+* On your solution explorer (on your project references), right click and choose add References, then browse the library you want to add (e.g. `C:\Program Files (x86)\MySQL\MySQL Connector Net 8.0.27\Assemblies\v4.5.2\MySql.Data.dll`)
+
+
 
 #### Using Database' Methods
 
