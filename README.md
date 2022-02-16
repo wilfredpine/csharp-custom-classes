@@ -1,7 +1,11 @@
 # CSharf Custom Classes
 
-Custom [Classes](https://github.com/wilfredpine/csharp-custom-classes/tree/main/Classes) for Windows Form Application using C# Developed by Wilfred V. Pine
+Custom [Classes](https://github.com/wilfredpine/csharp-custom-classes/tree/main/Classes) for Windows Form Application using C# in Object-Oriented Programming and Event-Driven Developed by Wilfred V. Pine
 @2020
+
+
+- You are free to contribute in this project library :)
+
 
 [MIT License](https://github.com/wilfredpine/CSharf-Custom-Classes/blob/main/LICENSE)
 
